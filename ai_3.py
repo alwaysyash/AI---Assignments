@@ -103,6 +103,18 @@ class Puzzle:
                 for j in i:
                     print(j,end=" ")
                 print("")
+                
+            print("open list")
+            for i in self.open:
+                print(i.data, end = ' ')    
+
+            print("closed list")
+            for i in self.closed:
+                print(i.data, end = ' ') 
+            print("hvalue")
+            print(self.h(cur.data,goal) )
+            print("fval")
+            print(cur.fval)
             """ If the difference between current and goal node is 0 we have reached the goal node"""
             if(self.h(cur.data,goal) == 0):
                 break
