@@ -37,11 +37,10 @@ class graph_problem:
 
 
 obj= graph_problem()
-graph = [[0, 1, 1, 0, 0] ,[1, 0, 1, 1, 1] ,[1, 1, 0, 1, 1] ,[0, 1, 1, 0, 0],[0, 1, 1, 0, 0]]
+graph = [[0, 1, 1, 0, 1] ,[1, 0, 0, 1, 1] ,[1, 0, 0, 1, 1] ,[0, 1, 1, 0, 1],[1, 1, 1, 1, 1]]
 m = 3 
 
 color = [0 for i in range(5)]
 
 if (not obj.graphColoring(graph, m, 0, color)):
     print("Solution does not exist")
-
